@@ -1,7 +1,9 @@
 ---
-import Footer from "../components/Footer.astro";
 import Navigation from "../components/Navigation.astro";
+import Footer from "../components/Footer.astro";
 import "../styles/global.css";
+
+const pageTitle = "Page d'accueil";
 ---
 
 <html lang="fr">
@@ -10,15 +12,14 @@ import "../styles/global.css";
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width" />
     <meta name="generator" content={Astro.generator} />
-    <title>Tuto Astro</title>
+    <title>{pageTitle}</title>
   </head>
   <body>
     <Navigation />
-
+    <h1>{pageTitle}</h1>
     <h1>About Me</h1>
     <h2>... and my new Astro site!</h2>
     <h1>Bienvenue dans le cours de Quentin test netlify</h1>
-    <h2>chien</h2>
     <Footer />
   </body>
 </html>
