@@ -1,15 +1,13 @@
 ---
 layout: ../../layouts/MarkdownPostLayout.astro
-title: Mon troisième article de blog
-author: Apprenti Astro
-description: "J'ai eu quelques défis, mais demander de l'aide à la communauté m'a vraiment aidé !"
+title: My Third Blog Post
+author: Astro Learner
+description: "I had some challenges, but asking in the community really helped!"
 image:
   url: "https://docs.astro.build/assets/rays.webp"
-  alt: "Vignette des rayons Astro."
+  alt: "The word community with a heart."
 pubDate: 2022-07-15
-tags: ["astro", "apprentissage en public", "obstacles", "communauté"]
+tags: ["astro", "learning in public", "setbacks", "community"]
 ---
 
-Ce n'était pas toujours tout rose, mais j'adore construire avec Astro. Et, la [communauté Discord](https://astro.build/chat) est vraiment sympathique et serviable !
-
-<p>Publié le : {frontmatter.pubDate.slice(0,10)}</p>
+It wasn't always smooth sailing, but I'm enjoying building with Astro. And, the [Discord community](https://astro.build/chat) is really friendly and helpful!

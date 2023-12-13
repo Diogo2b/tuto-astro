@@ -1,104 +1,27 @@
-/* Paleta de cores */
-:root {
-  --primary-color: #007acc;
-  --secondary-color: #f1f5f9;
-  --text-color: #333;
+html {
+  background-color: #f1f5f9;
+  font-family: sans-serif;
 }
 
-/* Tipografia */
-@font-face {
-  font-family: "Open Sans";
-  font-weight: 400;
-  font-style: normal;
-  src: local("Open Sans"), url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap") format("woff2");
-}
-
-html, body {
-  margin: 0;
-  padding: 0;
-  font-family: "Open Sans", sans-serif;
-  font-size: 16px;
-  color: var(--text-color);
-  background-color: var(--secondary-color);
-}
-
-/* Layout */
-main {
-  max-width: 1000px;
+body {
   margin: 0 auto;
+  width: 100%;
+  max-width: 80ch;
+  padding: 1rem;
+  line-height: 1.5;
 }
 
-/* Header e Navigation */
-header, nav {
-  background-color: var(--primary-color);
-  color: #fff;
-  padding: 1rem 2rem;
-  text-align: center;
-}
-
-nav a {
-  color: #fff;
-  text-decoration: none;
-  margin: 0 10px;
-}
-
-nav a:hover {
-  text-decoration: underline;
-}
-
-/* Estilos de Títulos e Texto */
-h1, h2, h3, p {
-  margin: 1rem 0;
+* {
+  box-sizing: border-box;
 }
 
 h1 {
-  font-size: 2rem;
-  font-weight: 700;
+  margin: 1rem 0;
+  font-size: 2.5rem;
 }
 
-h2 {
-  font-size: 1.5rem;
-}
+/* nav styles */
 
-h3 {
-  font-size: 1.2rem;
-}
-
-/* Footer */
-footer {
-  background-color: #fff;
-  color: var(--text-color);
-  padding: 2rem 0;
-  text-align: center;
-}
-
-footer a {
-  color: var(--primary-color);
-  text-decoration: none;
-}
-
-footer a:hover {
-  text-decoration: underline;
-}
-
-/* Botões, Imagens e Vídeos */
-button {
-  background-color: var(--primary-color);
-  color: #fff;
-  border: none;
-  padding: 0.5rem 1rem;
-  cursor: pointer;
-}
-
-button:hover {
-  background-color: #005fa3; /* Escurecido manualmente */
-}
-
-img, video {
-  max-width: 100%;
-  height: auto;
-}
-/* Styles de la navigation */
 .hamburger {
   padding-right: 20px;
   cursor: pointer;
@@ -131,7 +54,8 @@ img, video {
   text-transform: uppercase;
 }
 
-.nav-links a:hover, a:focus {
+.nav-links a:hover,
+.nav-links a:focus {
   background-color: #ff9776;
 }
 
@@ -156,4 +80,13 @@ img, video {
   .hamburger {
     display: none;
   }
+}
+
+html.dark {
+  background-color: #0d0950;
+  color: #fff;
+}
+
+.dark .nav-links a {
+  color: #fff;
 }
